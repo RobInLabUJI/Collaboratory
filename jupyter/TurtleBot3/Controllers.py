@@ -5,6 +5,7 @@ import nav_msgs.msg
 import sensor_msgs.msg
 
 import numpy as np
+np.seterr(divide='ignore', invalid='ignore')
 
 def sleep(t):
   """Sleep t seconds in ROS time."""
